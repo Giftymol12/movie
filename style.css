@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Cabin:wght@400;500;700&family=Instrument+Serif&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    background: url(./images/oldman.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Acme', sans-serif;
+
+}
+
+#main {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin: 3rem;
+    justify-content: center;
+    font-size: 22px;
+
+}
+
+nav {
+    background-color: rgb(115, 171, 171);
+    align-items: center;
+
+}
+
+
+.title1 {
+    color: white;
+
+}
+
+.title1 h1 {
+    font-size: 7rem;
+
+
+}
+
+.title1 h3 {
+    font-size: 2rem;
+}
+
+header {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 6rem auto;
+}
+
+.search {
+    background-color: #83c0ca;
+    border: 4px grey inset;
+    margin-top: 2rem;
+    padding: .5rem 1rem;
+    border-radius: 50px;
+
+}
+
+
+
+#tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    margin: 2rem;
+    font-size: 21px;
+
+}
+
+.tags {
+    padding: .5rem;
+    color: #dee2e6;
+    background-color: rgba(0, 0, 0, 0.125);
+    border-radius: 50px;
+    border: 2px solid grey outset;
+}
+
+.tags:hover {
+    background-color: rgb(47, 47, 190);
+}
+
+.moviecard {
+
+    width: 25%;
+}
+
+
+.moviecard img {
+
+    width: 100%;
+}
+
+.movie-review {
+    color: #d2ced9;
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+
+.movie-info {
+    color: white;
+    font-size: 25px;
+    margin: 1rem 0;
+}
+
+
+
+.tag:hover {
+    background-color: rgb(59, 40, 34);
+}
+
+
+footer {
+    background-color: darkslategray;
+    padding: 3rem 0;
+}
+
+.details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    color: white;
+
+}
+
+.copy {
+    text-align: center;
+    color: rgb(40, 37, 29);
+    padding-top: 2rem;
+}
+
+/* responsive */
+@media(min-width:1440px) {
+    :root {
+        font-size: 20px;
+    }
+}
+
+@media(max-width:768px) {
+    #main {
+        display: block;
+
+    }
+
+    #tags {
+        font-size: 13px;
+    }
+
+    .moviecard {
+        width: 100%
+    }
+
+}
+
+@media(min-width:320px) and (max-width:540px) {
+    :root {
+        font-size: 10px;
+    }
+
+    .movie-info h2,
+    .movie-info h4 {
+        font-size: 25px;
+    }
+
+}
